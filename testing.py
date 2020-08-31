@@ -33,6 +33,7 @@ class AmazonTest:
 
     def click_hamburger_menu(self):
         #WebDriverWait(self.driver, 30).until(EC.presence_of_element_located((By.ID, "#nav-belt>div>a>i")))
+        #yes
         try:
             self.driver.find_element_by_css_selector('#nav-belt>div>a>i').click()
         except TimeoutException:
